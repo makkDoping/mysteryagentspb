@@ -791,31 +791,29 @@
                     </a>
                 </div>
 
-                <!-- Right: Business Form -->
-                <div class="work-block">
-                    <h3>Закажите аудит</h3>
-                    <p>Получите объективный анализ вашего заведения и четкий план улучшений.</p>
-                    
-                    <form id="auditForm">
-                        <div class="form-group">
-                            <label class="form-label" for="name">ФИО *</label>
-                            <input type="text" id="name" class="form-input" required placeholder="Иванов Иван">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="contact">Email или Telegram *</label>
-                            <input type="text" id="contact" class="form-input" required placeholder="@username или email@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="message">Комментарий или вопрос</label>
-                            <textarea id="message" class="form-input" placeholder="Расскажите о вашем бизнесе..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить заявку</button>
-                    </form>
-                    
-                    <div class="form-success" id="successMessage">
-                        Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.
-                    </div>
-                </div>
+               <!-- Right: Business Form -->
+<div class="work-block">
+    <h3>Закажите аудит</h3>
+    <p>Получите объективный анализ вашего заведения и четкий план улучшений.</p>
+    
+    <form id="auditForm" action="https://formspree.io/f/xgovnlvy" method="POST">
+        <div class="form-group">
+            <label class="form-label" for="name">ФИО *</label>
+            <input type="text" id="name" class="form-input" name="name" required placeholder="Макарчук Максим">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="contact">Email или Telegram *</label>
+            <input type="text" id="contact" class="form-input" name="contact" required placeholder="@username или email@example.com">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="message">Комментарий или вопрос</label>
+            <textarea id="message" class="form-input" name="message" placeholder="Расскажите о вашем бизнесе..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить заявку</button>
+    </form>
+    
+    <!-- Сообщение об успехе теперь не нужно - Formspree перенаправит на свою страницу -->
+</div>
             </div>
         </div>
     </section>

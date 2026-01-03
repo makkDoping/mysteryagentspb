@@ -790,18 +790,16 @@
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                     </a>
                 </div>
-<!-- Right: Business Form -->
+
+              <!-- Right: Business Form -->
 <div class="work-block">
     <h3>Закажите аудит</h3>
     <p>Получите объективный анализ вашего заведения и четкий план улучшений.</p>
     
     <form id="auditForm" action="https://formspree.io/f/xgovnlvy" method="POST">
-        <!-- Добавим скрытое поле для названия формы -->
-        <input type="hidden" name="_formname" value="Заявка с сайта">
-        
         <div class="form-group">
             <label class="form-label" for="name">ФИО *</label>
-            <input type="text" id="name" class="form-input" name="name" required placeholder="Иванов Иван">
+            <input type="text" id="name" class="form-input" name="name" required placeholder="Макарчук Максим">
         </div>
         <div class="form-group">
             <label class="form-label" for="contact">Email или Telegram *</label>
@@ -811,12 +809,10 @@
             <label class="form-label" for="message">Комментарий или вопрос</label>
             <textarea id="message" class="form-input" name="message" placeholder="Расскажите о вашем бизнесе..."></textarea>
         </div>
-        <!-- Капча от Formspree (появится автоматически) -->
-        <div style="display: none;">
-            <input type="checkbox" name="_gotcha" tabindex="-1" autocomplete="off">
-        </div>
         <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить заявку</button>
     </form>
+    
+    <!-- Сообщение об успехе теперь не нужно - Formspree перенаправит на свою страницу -->
 </div>
             </div>
         </div>
